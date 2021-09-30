@@ -12,20 +12,36 @@
   <script src="JS/jquery-3.5.1.js"></script>
   <script src="JS/script.js"></script>
 </head>
-<body>
+<body class="wrapperDesktop">
   <header>
-    <img src="images/mobile/image-header.jpg" alt="" aria-hidden="true">
-      <div class="menueleiste">
+    <img class="noDesktop" src="images/mobile/image-header.jpg" alt="" aria-hidden="true">
+    <img class="noMobile" src="images/desktop/image-header.jpg" alt="" aria-hidden="true">
+      <div class="menueleiste wrapperDesktop">
         <img src="images/logo.svg" alt="sunnyside">
-        <img class="burger" src="images/icon-hamburger.svg" alt="sunnyside">
+        <img class="burger noDesktop" src="images/icon-hamburger.svg" alt="sunnyside">
+        <div class="noMobile menue">
+          <p>
+            <a href="#">About</a>
+          </p>
+          <p>
+            <a href="#">Services</a>
+          </p>
+          <p>
+            <a href="#">Projects</a>
+          </p>
+          <div>
+              <h2> <a href="#">Contact</a></h2>
+          </div>
+        </div>
       </div>
       <div class="headInformation"> 
           <h1>
             we are creatives
           </h1>
           <img src="images/icon-arrow-down.svg" alt="" aria-hidden="true">
+      </div>
     </div>
-    <div class="menue">
+    <div class="menue noDesktop">
       <div class="dreieck"></div>
       <div class="textMenue flex-direction-column">
         <p>
@@ -48,9 +64,9 @@
       <article>
         <img src="images/mobile/image-transform.jpg" alt="" aria-hidden="true">
       </article>
-      <article class="wrapper textblock flex-direction-column">
+      <article class="wrapper brand textblock flex-direction-column ">
         <h2>
-          Transform your brand
+          Transform your  <span class="break">brand</span>
         </h2>
         <p>
           We are a full-service creative agency specializing in helping brands grow fast. 
@@ -66,11 +82,12 @@
         </div>
       </article>
       <article>
-        <img src="images/mobile/image-stand-out.jpg" alt="" aria-hidden="true">
+        <img  class="noDesktop" src="images/mobile/image-stand-out.jpg" alt="" aria-hidden="true">
+        <img  class="noMobile" src="images/desktop/image-stand-out.jpg" alt="" aria-hidden="true">
       </article>
-      <article class="wrapper textblock flex-direction-column">
+      <article class="wrapper audience textblock flex-direction-column">
         <h2>
-          Stand out to the right audience
+          Stand out to the right <span class="break">audience</span>
         </h2>
         <p>
           Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
@@ -85,7 +102,8 @@
         </div>
       </article>
       <article class="graficDesign flex-center">
-        <img src="images/mobile/image-graphic-design.jpg" alt="" aria-hidden="true">
+        <img class="noDesktop" src="images/mobile/image-graphic-design.jpg" alt="" aria-hidden="true">
+        <img class="noMobile" src="images/desktop/image-graphic-design.jpg" alt="" aria-hidden="true">
         <section class="flex-direction-column wrapper">
           <h2>
             Graphic design
@@ -96,7 +114,8 @@
         </section>
       </article>
       <article class="graficDesign flex-center">
-        <img src="images/mobile/image-photography.jpg" alt="" aria-hidden="true">
+        <img class="noDesktop" src="images/mobile/image-photography.jpg" alt="" aria-hidden="true">
+        <img class="noMobile" src="images/desktop/image-photography.jpg" alt="" aria-hidden="true">
         <section class="flex-direction-column wrapper">
           <h2>
             Photography
@@ -110,42 +129,52 @@
         <h2>
           Client Testimonials
         </h2>
-        <section class="flex-direction-column wrapper">
-          <img src="images/image-emily.jpg" alt="" aria-hidden="true">
-          <p>  
-            We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
-          </p>
-          <div class="flex-direction-column">
-            <h3>Emily R.</h3>
-            <span>Marketing Director</span>
-          </div>
-        </section>
-        <section class="flex-direction-column wrapper">
-          <img src="images/image-thomas.jpg" alt="" aria-hidden="true">
-          <p>  
-            Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
-          </p>
-          <div class="flex-direction-column">
-            <h3>Thomas S.</h3>
-            <span>Chief Operating Officer</span>
-          </div>
-        </section>
-        <section class="flex-direction-column wrapper">
-          <img src="images/image-jennie.jpg" alt="" aria-hidden="true">
-          <p>  
-            Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
-          </p>
-          <div class="flex-direction-column">
-            <h3>Jennie F.</h3>
-            <span>Business Owner</span>
-          </div>
-        </section>
+        <div class="flex-direction-column wrapper">
+          <section class="flex-direction-column ">
+            <img src="images/image-emily.jpg" alt="" aria-hidden="true">
+            <p>  
+              We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
+            </p>
+            <div class="flex-direction-column">
+              <h3>Emily R.</h3>
+              <span>Marketing Director</span>
+            </div>
+          </section>
+          <section class="flex-direction-column">
+            <img src="images/image-thomas.jpg" alt="" aria-hidden="true">
+            <p>  
+              Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
+            </p>
+            <div class="flex-direction-column">
+              <h3>Thomas S.</h3>
+              <span>Chief Operating Officer</span>
+            </div>
+          </section>
+          <section class="flex-direction-column">
+            <img src="images/image-jennie.jpg" alt="" aria-hidden="true">
+            <p>  
+              Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
+            </p>
+            <div class="flex-direction-column">
+              <h3>Jennie F.</h3>
+              <span>Business Owner</span>
+            </div>
+          </section>
+      </div>
       </article>
       <article class="galerie">
-        <img src="images/mobile/image-gallery-milkbottles.jpg">
-        <img src="images/mobile/image-gallery-orange.jpg">
-        <img src="images/mobile/image-gallery-cone.jpg">
-        <img src="images/mobile/image-gallery-sugar-cubes.jpg">
+        <div class="noDesktop">
+          <img src="images/mobile/image-gallery-milkbottles.jpg">
+          <img src="images/mobile/image-gallery-orange.jpg">
+          <img src="images/mobile/image-gallery-cone.jpg">
+          <img src="images/mobile/image-gallery-sugar-cubes.jpg">
+        </div>
+        <div class="noMobile">
+          <img src="images/desktop/image-gallery-milkbottles.jpg">
+          <img src="images/desktop/image-gallery-orange.jpg">
+          <img src="images/desktop/image-gallery-cone.jpg">
+          <img src="images/desktop/image-gallery-sugarcubes.jpg">
+        </div>
       </article>
     </div>
   </main>

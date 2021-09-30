@@ -106,21 +106,24 @@ header{
     height: 1rem;
 }
 .menue{
-    height: 55%;
+    height: 50%;
     width: 90%;
     position: fixed;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%,-50%);
     background-color: var(--White);
     display: none;
     z-index: 1000000;
 }
-.menue p a{
+.menue a{
+    font-size:1.5rem;
+}
+.menue p > a{
     color: var(--GrayishBlue);
     text-decoration: none;
 }
-.menue div a{
+.menue div > h2 > a{
     color: var(--VeryDarkDesaturatedBblue);
     text-decoration: none;
 }
@@ -131,7 +134,7 @@ header{
     align-items: center;
 }
 .textMenue div h2{
-    padding: 0.5rem 1rem;
+    padding: 1rem 2rem;
     background: var(--Yellow);
     border-radius: 2rem;
     font-size: 1rem;

@@ -18,6 +18,8 @@
 --DarkGrayishBlue: hsl(232, 10%, 55%);
 --GrayishBlue: hsl(210, 4%, 67%);
 --White: hsl(0, 0%, 100%);
+
+--customColor:hsl(167deg 38% 67%);
 }
 *{
     box-sizing: border-box;
@@ -38,6 +40,11 @@ h2{
     font-family: 'Fraunces', serif;
     font-weight: 700;
     color: var(--VeryDarkDesaturatedBblue);
+}
+h3{
+    font-weight: 900;
+    color: var(--VeryDarkDesaturatedBblue);
+    font-family: 'Fraunces', serif;
 }
 img{
     max-width: 100%;
@@ -60,8 +67,9 @@ body{
     background-color: hsl(51deg 100% 49% / 6%);
 }
 #all{
-    grid-template-rows: repeat(9,1fr);
+    grid-template-rows: auto;
     grid-template-columns: 1fr;
+    display: grid;
 }
 header{
     height: 100%;
@@ -74,6 +82,7 @@ header{
     flex-direction: column;
     display: flex;
     gap: 1.5rem;
+    align-items: center;
 }
 .flex-center{
     display: flex;
@@ -90,6 +99,7 @@ header{
     display: flex;
     justify-content: space-between;
     padding: 1.5rem 1rem;
+    z-index: 1000000;
 }
 .menueleiste img{
     width: auto;
@@ -104,6 +114,7 @@ header{
     transform: translate(-50%,-50%);
     background-color: var(--White);
     display: none;
+    z-index: 1000000;
 }
 .menue p a{
     color: var(--GrayishBlue);
@@ -196,4 +207,55 @@ section h2{
 }
 .graficDesign section p{
     color: var(--VeryDarkDesaturatedBblue);
+}
+
+/* Testimonials */
+
+.testimonials{
+    text-align: center;
+    padding: 4rem 0rem;
+    gap: 3.5rem
+}
+.testimonials div{
+    gap: 0.5rem;
+}
+.testimonials p{
+    color: var(--VeryDarkGrayishBlue);
+}
+.testimonials h2{
+    text-transform: uppercase;
+    color: var(--GrayishBlue);
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}
+.testimonials img{
+    width: 4rem;
+    border-radius: 50%;
+}
+
+.testimonials span{
+    color: var(--GrayishBlue);
+    font-size: 0.8rem;
+}
+.galerie{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+footer{
+    height: 40vh;
+    background: var(--customColor);
+    display: grid;
+    grid-auto-rows: 0.2fr 0.3fr 1fr;
+    justify-content: center;
+    place-items: end center;
+    padding: 4rem 0rem;
+}
+footer div a{
+    text-decoration: none;
+    color:var(--DarkModerateCyan)
+}
+footer div{
+    display: flex;
+    gap: 2rem;
 }

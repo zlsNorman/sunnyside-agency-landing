@@ -308,7 +308,7 @@ article {
     justify-content: center;
   }
   .wrapper {
-    padding: 0rem 8rem;
+    padding: 0rem 15%;
   }
   .wrapperDesktop {
     max-width: 1440px;

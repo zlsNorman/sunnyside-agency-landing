@@ -80,6 +80,9 @@ article {
   display: flex;
   justify-content: center;
 }
+.learnMore a{
+  text-decoration: none;
+}
 .learnMoreUnderline {
   width: 110%;
   height: 6px;
@@ -87,6 +90,7 @@ article {
   position: absolute;
   border-radius: 35px;
   bottom: 0;
+  transition: 1s;
 }
 .graficDesign section {
   position: absolute;
@@ -390,6 +394,9 @@ article {
     position: relative;
     text-transform: uppercase;
     color: var(--VeryDarkDesaturatedBblue);
+  }
+  .learnMore:hover .learnMoreUnderline{
+    height: 100%;
   }
 
   /* Testimonials */

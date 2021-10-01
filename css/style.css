@@ -442,7 +442,7 @@ article {
     grid-template-columns: repeat(4, 1fr);
   }
   footer {
-    height: 20vh;
+    height: 30vh;
     background: var(--customColor);
     display: grid;
     grid-auto-rows: 0.2fr 0.4fr 1fr;

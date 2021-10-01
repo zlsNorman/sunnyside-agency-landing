@@ -451,7 +451,7 @@ article {
     display: flex;
     gap: 2rem;
   }
-  .footerLinks:hover a{
+  .footerLinks a:hover{
     color: var(--White);
   }
   .socials a:hover > svg path:first-of-type{

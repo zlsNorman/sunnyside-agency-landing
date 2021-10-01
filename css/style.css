@@ -268,7 +268,7 @@ article {
     grid-template-rows: repeat(2, 1fr);
   }
   footer {
-    height: 40vh;
+    height: 35vh;
     background: var(--customColor);
     display: grid;
     grid-auto-rows: 0.2fr 0.3fr 1fr;
@@ -336,6 +336,12 @@ article {
     border-radius: 2rem;
     font-size: 1rem;
     text-transform: uppercase;
+  }
+  .menue div h2:hover{
+    background-color: rgba(255, 255, 255, 0.226);
+  }
+  .menue div h2:hover a{
+    color: var(--White);
   }
 
   .headInformation {
@@ -432,10 +438,10 @@ article {
     height: 20vh;
     background: var(--customColor);
     display: grid;
-    grid-auto-rows: 0.2fr 0.3fr 1fr;
+    grid-auto-rows: 0.2fr 0.4fr 1fr;
     justify-content: center;
     place-items: end center;
-    padding: 4rem 0rem 2rem 0rem;
+    padding: 2rem 0rem 2rem 0rem;
   }
   footer div a {
     text-decoration: none;
@@ -444,5 +450,11 @@ article {
   footer div {
     display: flex;
     gap: 2rem;
+  }
+  .footerLinks:hover a{
+    color: var(--White);
+  }
+  .socials a:hover > svg path:first-of-type{
+    fill: var(--White);
   }
 }

@@ -59,8 +59,50 @@ img {
 p {
   color: var(--GrayishBlue);
 }
+
+main {
+  background: hsl(51deg 100% 49% / 6%);
+}
+header {
+  height: 100%;
+  position: relative;
+}
 article {
   position: relative;
+}
+.flex-direction-column {
+  flex-direction: column;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+.learnMoreUnderline {
+  width: 110%;
+  height: 6px;
+  background-color: var(--Yellow);
+  position: absolute;
+  border-radius: 35px;
+  bottom: 0;
+}
+.graficDesign section {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  bottom: 5rem;
+}
+.graficDesign section p {
+  color: var(--VeryDarkDesaturatedBblue);
+}
+
+.mid {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 /* Tablett */
 @media screen and (min-width: 700px) and (max-width: 800px) {
@@ -75,30 +117,13 @@ article {
     font-weight: 600;
     font-size: 16px;
   }
-  body {
-    background-color: hsl(51deg 100% 49% / 6%);
-  }
   #all {
     grid-template-rows: auto;
     grid-template-columns: 1fr;
     display: grid;
   }
-  header {
-    height: 100%;
-    position: relative;
-  }
   .noMobile {
-    display: none!important;
-  }
-  .flex-direction-column {
-    flex-direction: column;
-    display: flex;
-    gap: 1.5rem;
-    align-items: center;
-  }
-  .flex-center {
-    display: flex;
-    justify-content: center;
+    display: none !important;
   }
   .wrapper {
     max-width: 290px;
@@ -111,7 +136,7 @@ article {
     display: flex;
     justify-content: space-between;
     padding: 1.5rem 1rem;
-    z-index: 1000000;
+    z-index: 5;
   }
   .menueleiste img {
     width: auto;
@@ -122,8 +147,6 @@ article {
     width: 90%;
     position: fixed;
     top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     background-color: var(--White);
     display: none;
     z-index: 1000000;
@@ -160,11 +183,10 @@ article {
     width: 0;
     height: 0;
     border-left: 30px solid transparent;
-    border-bottom: 30px solid #fff;
+    border-bottom: 30px solid var(--White);
   }
   .headInformation {
     color: var(--White);
-    position: absolute;
     font-size: 1rem;
     letter-spacing: 0.5rem;
     text-align: center;
@@ -177,9 +199,6 @@ article {
 
     max-width: 295px;
     margin: auto;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
   }
   .textblock {
     text-align: center;
@@ -204,34 +223,17 @@ article {
     text-transform: uppercase;
     color: var(--VeryDarkDesaturatedBblue);
   }
-  .learnMoreUnderline {
-    width: 110%;
-    height: 6px;
-    background-color: var(--Yellow);
-    position: absolute;
-    border-radius: 35px;
-    bottom: 0;
-  }
-  .graficDesign section {
-    position: absolute;
-    bottom: 0;
-    text-align: center;
-    bottom: 5rem;
-  }
-  .graficDesign section p {
-    color: var(--VeryDarkDesaturatedBblue);
-  }
 
   /* Testimonials */
 
-  .testimonials{
+  .testimonials {
     text-align: center;
     padding: 4rem 0rem;
   }
-  .testimonials div{
+  .testimonials div {
     gap: 3.5rem;
   }
-  .testimonials div div {
+  .workPosition {
     gap: 0.5rem;
   }
   .testimonials p {
@@ -252,7 +254,7 @@ article {
     color: var(--GrayishBlue);
     font-size: 0.8rem;
   }
-  .galerie div{
+  .galerie div {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -278,34 +280,12 @@ article {
 
 /* Desktop */
 @media screen and (min-width: 801px) {
-  html {
-    font-family: "Barlow", sans-serif;
-    font-weight: 600;
-    font-size: 16px;
-  }
-  main{
-    background:hsl(51deg 100% 49% / 6%);
-  }
   #all {
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     display: grid;
-  }
-  header {
-    height: 100%;
-    position: relative;
   }
   .noDesktop {
     display: none !important;
-  }
-  .flex-direction-column {
-    flex-direction: column;
-    display: flex;
-    gap: 1.5rem;
-    align-items: center;
-  }
-  .flex-center {
-    display: flex;
-    justify-content: center;
   }
   .wrapper {
     padding: 0rem 15%;
@@ -321,7 +301,7 @@ article {
     display: flex;
     justify-content: space-between;
     padding: 1.5rem;
-    z-index: 1000000;
+    z-index: 5;
     align-items: center;
   }
   .menueleiste img {
@@ -330,7 +310,7 @@ article {
   }
   .menue {
     display: flex;
-    gap:2rem;
+    gap: 2rem;
     font-size: 1rem;
     align-items: baseline;
   }
@@ -353,7 +333,6 @@ article {
   .headInformation {
     width: 100%;
     color: var(--White);
-    position: absolute;
     font-size: 1rem;
     letter-spacing: 0.5rem;
     display: flex;
@@ -361,13 +340,11 @@ article {
     gap: 4rem;
     align-items: center;
     top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
   }
-  .headInformation h1{
+  .headInformation h1 {
     font-size: 3rem;
   }
-  .brand{
+  .brand {
     grid-row: 1;
   }
   .textblock {
@@ -375,15 +352,15 @@ article {
     justify-content: center;
     align-items: start;
   }
-  .break{
-      display: block;
+  .break {
+    display: block;
   }
   .textblock h2,
   section h2 {
     font-weight: 900;
     font-size: 1.6rem;
   }
-  .textblock p{
+  .textblock p {
     width: 70%;
   }
   .learnMore {
@@ -400,23 +377,6 @@ article {
     text-transform: uppercase;
     color: var(--VeryDarkDesaturatedBblue);
   }
-  .learnMoreUnderline {
-    width: 110%;
-    height: 6px;
-    background-color: var(--Yellow);
-    position: absolute;
-    border-radius: 35px;
-    bottom: 0;
-  }
-  .graficDesign section {
-    position: absolute;
-    bottom: 0;
-    text-align: center;
-    bottom: 5rem;
-  }
-  .graficDesign section p {
-    color: var(--VeryDarkDesaturatedBblue);
-  }
 
   /* Testimonials */
 
@@ -431,7 +391,7 @@ article {
     gap: 3.5rem;
     flex-direction: row;
   }
-  .testimonials div div {
+  .workPosition {
     gap: 0.5rem;
     flex-direction: column;
   }
@@ -453,10 +413,10 @@ article {
     color: var(--GrayishBlue);
     font-size: 0.8rem;
   }
-  .galerie{
+  .galerie {
     grid-area: 5 / 1 / 5 /3;
   }
-  .galerie div{
+  .galerie div {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
   }
